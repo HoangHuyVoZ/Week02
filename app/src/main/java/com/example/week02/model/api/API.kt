@@ -1,6 +1,6 @@
-package com.example.week02.Model.API
+package com.example.week02.model.api
 
-import com.example.week02.Interfaces.Constant.Companion.BASE_URL
+import com.example.week02.interfaces.Constant.Companion.BASE_URL
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -15,7 +15,7 @@ class API {
             .client(client)
             .build()
 
-        fun<T> buildService(service: Class<T>): T{
+        fun <T> buildService(service: Class<T>): T {
             return retrofit.create(service)
         }
     }

@@ -1,4 +1,4 @@
-package com.example.week02.Interfaces
+package com.example.week02.interfaces
 
 interface Constant {
     companion object {
